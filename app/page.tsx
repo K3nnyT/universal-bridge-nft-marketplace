@@ -25,28 +25,28 @@ export default function Home() {
         </div>
 
         <div className="mb-8">
-          <h2 className="pixel-text text-2xl font-bold mb-4 text-white-400">Categories</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors">
-              <Link href="/category/swords" className="p-4 flex flex-col items-center">
+          <h2 className="pixel-text text-2xl font-bold mb-4 text-white-400 text-center">Categories</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors h-40">
+              <Link href="/category/swords" className="p-4 h-full flex flex-col items-center justify-center">
                 <Sword className="h-8 w-8 mb-2 text-blue-400" />
                 <span className="pixel-text text-white-400">Painting</span>
               </Link>
             </Card>
-            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors">
-              <Link href="/category/staffs" className="p-4 flex flex-col items-center">
+            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors h-40">
+              <Link href="/category/staffs" className="p-4 h-full flex flex-col items-center justify-center">
                 <Wand2 className="h-8 w-8 mb-2 text-blue-400" />
                 <span className="pixel-text text-white-400">Photography</span>
               </Link>
             </Card>
-            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors">
-              <Link href="/category/potions" className="p-4 flex flex-col items-center">
+            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors h-40">
+              <Link href="/category/potions" className="p-4 h-full flex flex-col items-center justify-center">
                 <Flask className="h-8 w-8 mb-2 text-blue-400" />
                 <span className="pixel-text text-white-400">Digital Art</span>
               </Link>
             </Card>
-            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors">
-              <Link href="/category/all" className="p-4 flex flex-col items-center">
+            <Card className="pixel-card bg-zinc-800 border-blue-500 hover:border-white-400 transition-colors h-40">
+              <Link href="/category/all" className="p-4 h-full flex flex-col items-center justify-center">
                 <Coins className="h-8 w-8 mb-2 text-blue-400" />
                 <span className="pixel-text text-white-400">All Items</span>
               </Link>
