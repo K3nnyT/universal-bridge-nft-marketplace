@@ -50,14 +50,14 @@ export default function PixelHeader() {
               <Input
                 type="search"
                 placeholder="Search items..."
-                className="w-64 bg-zinc-700 border-purple-500 focus:border-green-400 text-white"
+                className="w-64 bg-zinc-700 border-blue-500 focus:border-green-400 text-white"
               />
               <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-zinc-400" />
             </div>
             <nav className="flex items-center space-x-4">
               <Link
                 href="/category/all"
-                className="text-white hover:text-purple-300"
+                className="text-white hover:text-blue-300"
               >
                 Marketplace
               </Link>
@@ -67,7 +67,7 @@ export default function PixelHeader() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:text-purple-300"
+                  className="text-white hover:text-blue-300"
                 >
                   <ShoppingCart className="h-5 w-5" />
                 </Button>
@@ -76,7 +76,7 @@ export default function PixelHeader() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:text-purple-300"
+                  className="text-white hover:text-blue-300"
                 >
                   <User className="h-5 w-5" />
                 </Button>
@@ -87,11 +87,11 @@ export default function PixelHeader() {
                 theme={darkTheme({
                   colors: {
                     primaryText: "hsl(142, 69%, 58%)",
-                    primaryButtonBg: "hsl(271, 81%, 56%)",
+                    primaryButtonBg: "#1973c0",
                     primaryButtonText: "hsl(0, 0%, 100%)",
                     secondaryText: "hsl(142, 69%, 58%)",
-                    accentText: "hsl(272, 81%, 56%)",
-                    borderColor: "hsl(272, 81%, 56%)",
+                    accentText: "#1973c0",
+                    borderColor: "#1973c0",
                   },
                 })}
                 connectButton={{ label: "Connect" }}
@@ -124,14 +124,14 @@ export default function PixelHeader() {
               <Input
                 type="search"
                 placeholder="Search items..."
-                className="w-full bg-zinc-700 border-purple-500 focus:border-green-400 text-white"
+                className="w-full bg-zinc-700 border-blue-500 focus:border-green-400 text-white"
               />
               <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-zinc-400" />
             </div>
             <nav className="flex flex-col space-y-4 mb-4">
               <Link
                 href="/category/all"
-                className="text-white hover:text-purple-300 py-2"
+                className="text-white hover:text-blue-300 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Marketplace
@@ -143,7 +143,7 @@ export default function PixelHeader() {
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="text-white hover:text-purple-300"
+                    className="text-white hover:text-blue-300"
                   >
                     <ShoppingCart className="h-5 w-5" />
                   </Button>
@@ -152,13 +152,13 @@ export default function PixelHeader() {
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="text-white hover:text-purple-300"
+                    className="text-white hover:text-blue-300"
                   >
                     <User className="h-5 w-5" />
                   </Button>
                 </Link>
               </div>
-              <Button className="pixel-button bg-purple-600 hover:bg-purple-700">
+              <Button className="pixel-button bg-blue-600 hover:bg-blue-700">
                 Connect
               </Button>
             </div>

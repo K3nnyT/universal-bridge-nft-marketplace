@@ -129,7 +129,7 @@ export default function NFTGrid() {
         return (
           <Card
             key={listing.id}
-            className="pixel-card bg-zinc-800 border-purple-500 overflow-hidden"
+            className="pixel-card bg-zinc-800 border-blue-500 overflow-hidden"
           >
             <Link href={`/nft/${listing.id}`}>
               <div className="relative aspect-square">
@@ -142,7 +142,7 @@ export default function NFTGrid() {
                   <span className="text-xs text-green-400">{type}</span>
                 </div>
                 <div className="absolute bottom-2 left-2 bg-zinc-900/70 px-2 py-1 rounded pixel-tag">
-                  <span className="text-xs text-purple-400">
+                  <span className="text-xs text-blue-400">
                     {listing.asset.supply === "1"
                       ? "Unique"
                       : `Supply: ${listing.asset.supply}`}
@@ -161,7 +161,7 @@ export default function NFTGrid() {
                   className={
                     likedNfts.includes(listing.id)
                       ? "text-red-500 hover:text-red-400"
-                      : "text-purple-400 hover:text-purple-300"
+                      : "text-blue-400 hover:text-blue-300"
                   }
                   onClick={(e) => {
                     e.preventDefault();
@@ -185,7 +185,7 @@ export default function NFTGrid() {
                 </div>
                 <div className="bg-zinc-900 rounded p-1">
                   <p className="text-xs text-zinc-500">Ability</p>
-                  <p className="text-sm text-purple-400">{ability}</p>
+                  <p className="text-sm text-blue-400">{ability}</p>
                 </div>
                 <div className="bg-zinc-900 rounded p-1">
                   <p className="text-xs text-zinc-500">Level</p>
@@ -203,13 +203,13 @@ export default function NFTGrid() {
                 </div>
                 <div className="text-right">
                   <p className="text-xs text-zinc-500">ID</p>
-                  <p className="text-sm text-purple-400">#{listing.asset.id}</p>
+                  <p className="text-sm text-blue-400">#{listing.asset.id}</p>
                 </div>
               </div>
             </CardContent>
             <CardFooter className="p-4 pt-0 flex gap-2">
               <Button
-                className="w-full pixel-button bg-purple-600 hover:bg-purple-700"
+                className="w-full pixel-button bg-blue-600 hover:bg-blue-700"
                 onClick={() => {
                   console.log("Buy NFT:", listing.id);
                 }}

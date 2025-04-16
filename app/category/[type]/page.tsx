@@ -17,7 +17,7 @@ export default function CategoryPage({ params }: { params: { type: string } }) {
       <PixelHeader />
 
       <main className="container mx-auto px-4 py-8">
-        <Link href="/" className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-6">
+        <Link href="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-6">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to home
         </Link>
@@ -34,7 +34,7 @@ export default function CategoryPage({ params }: { params: { type: string } }) {
             {categoryType === "all" && "Browse our complete collection of magical items and rare artifacts."}
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="pixel-button bg-purple-600 hover:bg-purple-700">Filter</Button>
+            <Button className="pixel-button bg-blue-600 hover:bg-blue-700">Filter</Button>
             <Button className="pixel-button bg-green-600 hover:bg-green-700">Sort By: Latest</Button>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function CategoryPage({ params }: { params: { type: string } }) {
 
       <footer className="pixel-border-top bg-zinc-800 py-6">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-purple-300 mb-2">© 2025 Pixel Realm NFT Marketplace</p>
+          <p className="text-blue-300 mb-2">© 2025 Pixel Realm NFT Marketplace</p>
           <div className="flex justify-center gap-4">
             <Link href="/about" className="text-green-400 hover:text-green-300">
               About

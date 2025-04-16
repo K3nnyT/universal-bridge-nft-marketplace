@@ -142,13 +142,13 @@ export default function CategoryNFTGrid({ category }: { category: string }) {
     <div>
       {filteredNFTs.length === 0 ? (
         <div className="text-center py-12">
-          <h3 className="text-xl text-purple-400 mb-4">No items found in this category</h3>
+          <h3 className="text-xl text-blue-400 mb-4">No items found in this category</h3>
           <p className="text-zinc-400">Check back later or explore other categories</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredNFTs.map((nft) => (
-            <Card key={nft.id} className="pixel-card bg-zinc-800 border-purple-500 overflow-hidden">
+            <Card key={nft.id} className="pixel-card bg-zinc-800 border-blue-500 overflow-hidden">
               <Link href={`/nft/${nft.id}`}>
                 <div className="relative aspect-square">
                   <img
@@ -160,7 +160,7 @@ export default function CategoryNFTGrid({ category }: { category: string }) {
                     <span className="text-xs text-green-400">{nft.type}</span>
                   </div>
                   <div className="absolute bottom-2 left-2 bg-zinc-900/70 px-2 py-1 rounded pixel-tag">
-                    <span className="text-xs text-purple-400">
+                    <span className="text-xs text-blue-400">
                       {nft.supply === 1 ? "Unique" : `Supply: ${nft.supply}`}
                     </span>
                   </div>
@@ -169,7 +169,7 @@ export default function CategoryNFTGrid({ category }: { category: string }) {
               <CardContent className="p-4">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-bold text-lg text-white">{nft.name}</h3>
-                  <Button variant="ghost" size="icon" className="text-purple-400 hover:text-purple-300">
+                  <Button variant="ghost" size="icon" className="text-blue-400 hover:text-blue-300">
                     <Heart className="h-5 w-5" />
                     <span className="sr-only">Like</span>
                   </Button>
@@ -183,7 +183,7 @@ export default function CategoryNFTGrid({ category }: { category: string }) {
                   </div>
                   <div className="bg-zinc-900 rounded p-1">
                     <p className="text-xs text-zinc-500">Ability</p>
-                    <p className="text-sm text-purple-400">{nft.attributes.ability}</p>
+                    <p className="text-sm text-blue-400">{nft.attributes.ability}</p>
                   </div>
                   <div className="bg-zinc-900 rounded p-1">
                     <p className="text-xs text-zinc-500">Level</p>
@@ -198,12 +198,12 @@ export default function CategoryNFTGrid({ category }: { category: string }) {
                   </div>
                   <div className="text-right">
                     <p className="text-xs text-zinc-500">Likes</p>
-                    <p className="text-sm text-purple-400">{nft.likes}</p>
+                    <p className="text-sm text-blue-400">{nft.likes}</p>
                   </div>
                 </div>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex gap-2">
-                <Button className="w-full pixel-button bg-purple-600 hover:bg-purple-700">Buy Now</Button>
+                <Button className="w-full pixel-button bg-blue-600 hover:bg-blue-700">Buy Now</Button>
               </CardFooter>
             </Card>
           ))}

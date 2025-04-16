@@ -96,7 +96,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
         <PixelHeader />
         <main className="container mx-auto px-4 py-8">
           <div className="text-center py-20">
-            <h2 className="text-2xl text-purple-400">Loading NFT details...</h2>
+            <h2 className="text-2xl text-blue-400">Loading NFT details...</h2>
           </div>
         </main>
       </div>
@@ -109,7 +109,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
         <PixelHeader />
         <main className="container mx-auto px-4 py-8">
           <div className="text-center py-20">
-            <h2 className="text-2xl text-purple-400">NFT not found</h2>
+            <h2 className="text-2xl text-blue-400">NFT not found</h2>
             <Link
               href="/"
               className="mt-4 inline-block text-green-400 hover:text-green-300"
@@ -137,7 +137,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
       <main className="container mx-auto px-4 py-8">
         <Link
           href="/"
-          className="inline-flex items-center text-purple-400 hover:text-purple-300 mb-6"
+          className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-6"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to marketplace
@@ -158,7 +158,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                   className={`bg-zinc-900/70 ${
                     isLiked
                       ? "text-red-500"
-                      : "text-purple-400 hover:text-purple-300"
+                      : "text-blue-400 hover:text-blue-300"
                   }`}
                   onClick={() => setIsLiked(!isLiked)}
                 >
@@ -169,13 +169,13 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="bg-zinc-900/70 text-purple-400 hover:text-purple-300"
+                  className="bg-zinc-900/70 text-blue-400 hover:text-blue-300"
                 >
                   <Share2 className="h-5 w-5" />
                 </Button>
               </div>
               <div className="absolute bottom-4 left-4 bg-zinc-900/70 px-2 py-1 rounded pixel-tag">
-                <span className="text-xs text-purple-400">
+                <span className="text-xs text-blue-400">
                   {listing.asset.supply === "1"
                     ? "Unique"
                     : `Supply: ${listing.asset.supply}`}
@@ -193,7 +193,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                   </h1>
                   <p className="text-sm text-zinc-400">
                     Created by{" "}
-                    <span className="text-purple-400">
+                    <span className="text-blue-400">
                       {`${listing.creatorAddress.substring(
                         0,
                         6
@@ -223,7 +223,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
               </div>
 
               <div className="flex gap-4">
-                <Button className="flex-1 pixel-button bg-purple-600 hover:bg-purple-700">
+                <Button className="flex-1 pixel-button bg-blue-600 hover:bg-blue-700">
                   <ShoppingCart className="mr-2 h-4 w-4" />
                   Buy Now
                 </Button>
@@ -240,19 +240,19 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
               <TabsList className="w-full grid grid-cols-3 bg-zinc-900">
                 <TabsTrigger
                   value="attributes"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
+                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
                 >
                   Attributes
                 </TabsTrigger>
                 <TabsTrigger
                   value="details"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
+                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
                 >
                   Details
                 </TabsTrigger>
                 <TabsTrigger
                   value="history"
-                  className="data-[state=active]:bg-purple-600 data-[state=active]:text-white"
+                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
                 >
                   History
                 </TabsTrigger>
@@ -260,7 +260,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
 
               <TabsContent value="attributes" className="p-4">
                 <div className="grid grid-cols-3 gap-4">
-                  <Card className="pixel-card bg-zinc-900 border-purple-500">
+                  <Card className="pixel-card bg-zinc-900 border-blue-500">
                     <CardContent className="p-4 text-center">
                       <p className="text-sm text-zinc-400 mb-1">Power</p>
                       <p className="text-xl font-bold text-green-400">
@@ -268,15 +268,15 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                       </p>
                     </CardContent>
                   </Card>
-                  <Card className="pixel-card bg-zinc-900 border-purple-500">
+                  <Card className="pixel-card bg-zinc-900 border-blue-500">
                     <CardContent className="p-4 text-center">
                       <p className="text-sm text-zinc-400 mb-1">Ability</p>
-                      <p className="text-xl font-bold text-purple-400">
+                      <p className="text-xl font-bold text-blue-400">
                         {ability}
                       </p>
                     </CardContent>
                   </Card>
-                  <Card className="pixel-card bg-zinc-900 border-purple-500">
+                  <Card className="pixel-card bg-zinc-900 border-blue-500">
                     <CardContent className="p-4 text-center">
                       <p className="text-sm text-zinc-400 mb-1">Level</p>
                       <p className="text-xl font-bold text-green-400">
@@ -291,7 +291,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                 <div className="space-y-4">
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Contract Address</span>
-                    <span className="text-purple-400 truncate max-w-[200px]">
+                    <span className="text-blue-400 truncate max-w-[200px]">
                       {`${listing.assetContractAddress.substring(
                         0,
                         6
@@ -302,19 +302,19 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Token ID</span>
-                    <span className="text-purple-400">{listing.tokenId}</span>
+                    <span className="text-blue-400">{listing.tokenId}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Token Standard</span>
-                    <span className="text-purple-400">ERC-1155</span>
+                    <span className="text-blue-400">ERC-1155</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Blockchain</span>
-                    <span className="text-purple-400">Arbitrum Sepolia</span>
+                    <span className="text-blue-400">Arbitrum Sepolia</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Listing ID</span>
-                    <span className="text-purple-400">#{listing.id}</span>
+                    <span className="text-blue-400">#{listing.id}</span>
                   </div>
                 </div>
               </TabsContent>
@@ -324,7 +324,7 @@ export default function NFTDetailPage({ params }: { params: { id: string } }) {
                   <div className="border-b border-zinc-700 pb-4 last:border-0">
                     <div className="flex justify-between mb-1">
                       <span className="font-bold text-green-400">Listed</span>
-                      <span className="text-purple-400">Now</span>
+                      <span className="text-blue-400">Now</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-zinc-400">
