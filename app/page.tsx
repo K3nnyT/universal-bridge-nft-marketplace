@@ -14,7 +14,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <div className="pixel-border p-6 mb-8 bg-zinc-800">
           <h1 className="pixel-text text-3xl md:text-4xl font-bold text-center mb-4 text-green-400">
-            Pixel Realm NFT Marketplace
+            The Relic NFT Marketplace
           </h1>
           <p className="text-center mb-6 text-blue-300">
             Collect, trade, and sell unique gaming items from the digital realm

@@ -41,7 +41,7 @@ export default function PixelHeader() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
             <span className="pixel-text text-xl font-bold text-green-400">
-              Pixel Realm
+              The Relic
             </span>
           </Link>
 
@@ -86,10 +86,10 @@ export default function PixelHeader() {
                 wallets={wallets}
                 theme={darkTheme({
                   colors: {
-                    primaryText: "hsl(142, 69%, 58%)",
+                    primaryText: "hsl(0, 0.00%, 87.80%)",
                     primaryButtonBg: "#1973c0",
                     primaryButtonText: "hsl(0, 0%, 100%)",
-                    secondaryText: "hsl(142, 69%, 58%)",
+                    secondaryText: "hsl(0, 0.00%, 80.80%)",
                     accentText: "#1973c0",
                     borderColor: "#1973c0",
                   },
