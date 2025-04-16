@@ -23,19 +23,19 @@ export default function CategoryPage({ params }: { params: { type: string } }) {
         </Link>
 
         <div className="pixel-border p-6 mb-8 bg-zinc-800">
-          <h1 className="pixel-text text-3xl font-bold text-green-400 mb-4">{categoryTitle}</h1>
+          <h1 className="pixel-text text-3xl font-bold text-white-400 mb-4">{categoryTitle}</h1>
           <p className="text-zinc-300 mb-6">
-            {categoryType === "swords" &&
-              "Legendary blades forged with magical elements. Perfect for warriors and knights."}
-            {categoryType === "staffs" &&
-              "Mystical staffs imbued with arcane power. Essential tools for mages and wizards."}
-            {categoryType === "potions" &&
-              "Magical elixirs with powerful effects. Brew, collect, and use in your adventures."}
-            {categoryType === "all" && "Browse our complete collection of magical items and rare artifacts."}
+            {categoryType === "Paintings" &&
+              "Here you find all things made with a brush."}
+            {categoryType === "Photography" &&
+              "Light captured by the lens."}
+            {categoryType === "Digital art" &&
+              "Coputer or Ipad, it makes no difference to us."}
+            {categoryType === "all" && "Browse our complete collection of relic artifacts."}
           </p>
           <div className="flex flex-wrap gap-4">
             <Button className="pixel-button bg-blue-600 hover:bg-blue-700">Filter</Button>
-            <Button className="pixel-button bg-green-600 hover:bg-green-700">Sort By: Latest</Button>
+            <Button className="pixel-button bg-white-600 hover:bg-white-700">Sort By: Latest</Button>
           </div>
         </div>
 
@@ -46,13 +46,13 @@ export default function CategoryPage({ params }: { params: { type: string } }) {
         <div className="container mx-auto px-4 text-center">
           <p className="text-blue-300 mb-2">© 2025 Pixel Realm NFT Marketplace</p>
           <div className="flex justify-center gap-4">
-            <Link href="/about" className="text-green-400 hover:text-green-300">
+            <Link href="/about" className="text-white-400 hover:text-white-300">
               About
             </Link>
-            <Link href="/faq" className="text-green-400 hover:text-green-300">
+            <Link href="/faq" className="text-white-400 hover:text-white-300">
               FAQ
             </Link>
-            <Link href="/terms" className="text-green-400 hover:text-green-300">
+            <Link href="/terms" className="text-white-400 hover:text-white-300">
               Terms
             </Link>
           </div>
